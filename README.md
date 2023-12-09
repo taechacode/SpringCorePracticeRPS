@@ -37,3 +37,9 @@
 <br/><br/>
 
 ## 퇴직연금 가입자 도메인 개발
+[퇴직연금 가입자 개발 소스코드](https://github.com/taechacode/SpringCorePracticeRPS/tree/main/src/main/java/rps/core/member)
+<br/><br/>
+
+## 퇴직연금 가입자 도메인 실행과 테스트
+[퇴직연금 가입자 테스트 소스코드](https://github.com/taechacode/SpringCorePracticeRPS/blob/main/src/test/java/com/rps/core/member/MemberServiceTest.java)
+<br/><br/>

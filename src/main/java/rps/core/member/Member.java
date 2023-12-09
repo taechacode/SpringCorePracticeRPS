@@ -5,11 +5,19 @@ public class Member {
     private Long id;
     private String name;
     private MemberType memberType;
+    private Long burdfeePayinAmt;
+    private Long limitPayinAmt;
+    private Long limitTaxAmt;
 
     public Member(Long id, String name, MemberType memberType) {
         this.id = id;
         this.name = name;
         this.memberType = memberType;
+        this.limitPayinAmt = 18000000L;
+        this.limitTaxAmt = 0L;
+        if(memberType == MemberType.PER) {
+            limitTaxAmt = 9000000L;
+        }
     }
 
     public Long getId() {
@@ -34,6 +42,30 @@ public class Member {
 
     public void setMemberType(MemberType memberType) {
         this.memberType = memberType;
+    }
+
+    public Long getBurdfeePayinAmt() {
+        return burdfeePayinAmt;
+    }
+
+    public void setBurdfeePayinAmt(Long burdfeePayinAmt) {
+        this.burdfeePayinAmt = burdfeePayinAmt;
+    }
+
+    public Long getLimitPayinAmt() {
+        return limitPayinAmt;
+    }
+
+    public void setLimitPayinAmt(Long limitPayinAmt) {
+        this.limitPayinAmt = limitPayinAmt;
+    }
+
+    public Long getLimitTaxAmt() {
+        return limitTaxAmt;
+    }
+
+    public void setLimitTaxAmt(Long limitTaxAmt) {
+        this.limitTaxAmt = limitTaxAmt;
     }
 
 }

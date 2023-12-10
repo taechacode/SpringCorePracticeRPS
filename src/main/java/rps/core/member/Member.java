@@ -13,6 +13,7 @@ public class Member {
         this.id = id;
         this.name = name;
         this.memberType = memberType;
+        this.burdfeePayinAmt = 0L;
         this.limitPayinAmt = 18000000L;
         this.limitTaxAmt = 0L;
         if(memberType == MemberType.PER) {

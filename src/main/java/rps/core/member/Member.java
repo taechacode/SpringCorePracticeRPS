@@ -8,6 +8,7 @@ public class Member {
     private Long burdfeePayinAmt;
     private Long limitPayinAmt;
     private Long limitTaxAmt;
+    private int pensionCount;
 
     public Member(Long id, String name, MemberType memberType) {
         this.id = id;
@@ -19,6 +20,7 @@ public class Member {
         if(memberType == MemberType.PER) {
             limitTaxAmt = 9000000L;
         }
+        this.pensionCount = 0;
     }
 
     public Long getId() {
@@ -69,4 +71,11 @@ public class Member {
         this.limitTaxAmt = limitTaxAmt;
     }
 
+    public int getPensionCount() {
+        return pensionCount;
+    }
+
+    public void setPensionCount(int pensionCount) {
+        this.pensionCount = pensionCount;
+    }
 }

@@ -1,12 +1,12 @@
-package rps.core.payout;
+package rps.core.payment;
 
 import rps.core.member.Member;
 import rps.core.member.MemberType;
 
-public class PensionPayoutPolicy implements PayoutPolicy {
+public class PensionPaymentPolicy implements PaymentPolicy {
 
     @Override
-    public long payout(Member member) {
+    public long calcPayoutAmt(Member member) {
 
         if(member.getPensionCount() == 0) {
             member.setPensionCount(12);

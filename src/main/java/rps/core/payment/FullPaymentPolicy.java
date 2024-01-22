@@ -1,12 +1,12 @@
-package rps.core.payout;
+package rps.core.payment;
 
 import rps.core.member.Member;
 import rps.core.member.MemberType;
 
-public class FullPayoutPolicy implements PayoutPolicy {
+public class FullPaymentPolicy implements PaymentPolicy {
 
     @Override
-    public long payout(Member member) {
+    public long calcPayoutAmt(Member member) {
 
         long payoutAmt = member.getBurdfeePayinAmt();
 
